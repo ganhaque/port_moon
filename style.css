@@ -1,0 +1,175 @@
+:root {
+  --base01: #181828;
+
+  /* --custom */
+  /* --nou: not often used */
+  --base00: #101317;
+  --base01: #1a1d21;
+  --base02: #23262a;
+  --base03: #2b2e32;
+  --base04: #323539;
+  --base05: #f2f4f8;
+  --base06: #ffffff;
+  --base07: #d4d4d5;
+  /* -- base08: #3ddbd9; -- variables */
+  /* -- base08: #7dcfff; -- variables */
+  /* -- base08: #59E1E3; -- variables */
+  --base08: #78a9ff;
+  /* -- base09: #ff9e64; -- interger, boolean, constant */
+  --base09: #FAB795;
+  /* -- base09: #F09383; -- interger, boolean, constant */
+  /* -- base0A: #ee5396; -- classes, search txt bg */
+  --base0A: #E95678;
+  /* -- base0B: #42be65; -- string */
+  base0B: #BAE881;
+  /* -- base0C: #2ac3de; -- support, regex */
+  /* -- base0C: #18B8D9; -- support, regex */
+  /* -- base0C: #78a9ff; -- support, regex */
+  base0C: #59E1E3;
+  /* -- base0D: #37d99e; -- func; mthd */
+  --base0D: #2EE6A6;
+  --base0E: #be95ff;
+  /* -- base0F: #82cfff; -- deprecated? */
+  /* -- base0F: #E95678; -- deprecated? syntax? */
+  --base0F: #A4C8DE;
+
+  --white: #ffffff;
+  --darker_black: #0a0d11;
+  --black: #101317;
+  /* -- black: #1C1E26; --  nvim bg */
+  --black2: #191d22;
+  --one_bg: #212428;
+  --one_bg2: #292c30;
+  --one_bg3: #33363a;
+  --grey: #3e4145;
+  --grey_fg: #45484c;
+  --grey_fg2: #4a4d51;
+  --light_grey: #525559;
+  /* -- line: #30303a; -- for lines like vertsplit */
+
+  /* -- red: #ee5396; */
+  /* -- red: #e05f65; */
+  /* -- baby_pink: #fc7b81; */
+  --red: #E95678;
+  --baby_pink: #f86587;
+  --pink: #ff7eb6;
+  /* -- pink: #EE64AC; */
+  --catppuccin_flamingo: #F2CDCD;
+  /* -- catppuccin_maroon: #EBA0AC; */
+  --horizon_orange: #F09383;
+  --orange: #ff9e64;
+  /* -- yellow: #e0af68; */
+  --yellow: #f6ca6b;
+  /* -- sun: #EBCB8B; --8% lighter than yellow --not updated */
+
+  --catppuccin_green: #ABE9B3;
+  --light_green: #BAE881;
+  --green: #42be65;
+  /* -- vibrant_green: #37d99e; */
+  --vibrant_green: #2EE6A6;
+  --teal: #1abc9c;
+  --green_cyan: #25B2BC;
+  --cyan: #18B8D9;
+  --pale_blue: #A4C8DE;
+  --light_blue: #7dcfff;
+  --blue: #78a9ff;
+  --nord_blue: #6b9cf2;
+  --purple: #be95ff;
+  --dark_purple: #9d7cd8;
+  --catppuccin_lavender: #B4BEFE;
+  --statusline_bg: #1d1e29;
+  --lightbg: #32333e;
+  --pmenu_bg: #3bdba2;
+  --folder_bg: #78a9ff;
+}
+
+@font-face {
+  font-family: SF;
+  src:url("/fonts/SF-Mono-Nerd-Font/SFMono\ Regular\ Nerd\ Font\ Complete.otf");
+}
+@font-face {
+  font-family: cozette;
+  src:url("/fonts/CozetteVector.ttf");
+}
+
+body {
+  background-color: var(--base00);
+}
+
+a {
+  color: var(--base0D);
+}
+
+
+.bigbox {
+  width: 92%;
+  height: 700px;
+  background-color: var(--base00);
+  padding: 0.4em;
+  margin: 0 auto;
+  /* border: 2px solid var(--base04); */
+  /* border-radius: 10px; */
+}
+
+.smallbox {
+  width: 200px;
+  height: 700px;
+  /* background-color: var(--base01); */
+  padding: 0.4em;
+  margin: 0 auto;
+  /* border: 2px solid var(--base04); */
+  border-radius: 10px;
+}
+
+.item {
+  width: 100%;
+  /* height: 150px; */
+  background-color: var(--base00);
+  color: var(--base06);
+  padding: 1em;
+  font-family: SF;
+  font-size: 0.9em;
+  /* margin: 0 auto; */
+  /* font-weight: 700; */
+  /* text-align: center; */
+  border: 2px solid var(--base04);
+  border-radius: 10px;
+}
+
+h2 {
+  text-transform: uppercase;
+  display: inline;
+  font-family: cozette;
+  color: var(--base0E);
+  font-size: 2em;
+}
+
+/* Base Styles Ends */
+
+.bigbox {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: space-evenly; */
+  /* align-items: flex-start; */
+  /* flex-wrap: wrap; */
+  /* align-content: flex-end; */
+  gap: 2em;
+}
+
+.smallbox {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.smallbox-1 {
+  flex-grow: 1;
+  /* flex-shrink: 0; */
+  /* flex-basis: 300px; */
+  /* flex: 1; */
+  /* align-self: center; */
+  /* order: 1; */
+}
+.smallbox-2 {
+  /* flex-basis: 0; */
+}
