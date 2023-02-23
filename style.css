@@ -21,11 +21,11 @@
   /* -- base0A: #ee5396; -- classes, search txt bg */
   --base0A: #E95678;
   /* -- base0B: #42be65; -- string */
-  base0B: #BAE881;
+  --base0B: #BAE881;
   /* -- base0C: #2ac3de; -- support, regex */
   /* -- base0C: #18B8D9; -- support, regex */
   /* -- base0C: #78a9ff; -- support, regex */
-  base0C: #59E1E3;
+  --base0C: #59E1E3;
   /* -- base0D: #37d99e; -- func; mthd */
   --base0D: #2EE6A6;
   --base0E: #be95ff;
@@ -81,15 +81,23 @@
   --lightbg: #32333e;
   --pmenu_bg: #3bdba2;
   --folder_bg: #78a9ff;
+
+  /* font-size: 16px; */
+  /* font-family: 'Open Sans'; */
+  /* --text-primary: #b6b6b6; */
+  /* --text-secondary: #ececec; */
+  /* --bg-primary: #23232e; */
+  /* --bg-secondary: #141418; */
+  /* --transition-speed: 600ms; */
 }
 
 @font-face {
   font-family: SF;
-  src:url("/fonts/SF-Mono-Nerd-Font/SFMono\ Regular\ Nerd\ Font\ Complete.otf");
+  src:url("fonts/SF-Mono-Nerd-Font/SFMono\ Regular\ Nerd\ Font\ Complete.otf");
 }
 @font-face {
   font-family: cozette;
-  src:url("/fonts/CozetteVector.ttf");
+  src:url("fonts/CozetteVector.ttf");
 }
 
 body {
@@ -201,3 +209,16 @@ h2 {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+/* Scrollbar */
+/* body::-webkit-scrollbar { */
+/*   width: 0.35rem; */
+/* } */
+/**/
+/* body::-webkit-scrollbar-track { */
+/* background: #1e1e24; */
+/* } */
+/**/
+/* body::-webkit-scrollbar-thumb { */
+/*   background: #6649b8; */
+/* } */
