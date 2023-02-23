@@ -93,7 +93,7 @@
 }
 
 body {
-  background-color: var(--base00);
+  background-color: var(--base01);
 }
 
 a {
@@ -109,9 +109,10 @@ a {
 .bigbox {
   width: 96%;
   height: 700px;
-  background-color: var(--base00);
-  padding: 0.4em;
+  /* background-color: var(--base00); */
+  /* padding: 0.4em; */
   /* margin: 0 auto; */
+  margin: auto;
   /* border: 2px solid var(--base04); */
   /* border-radius: 10px; */
 }
@@ -127,7 +128,7 @@ a {
 }
 
 .item {
-  width: 100%;
+  /* width: 100%; */
   /* height: 150px; */
   background-color: var(--base00);
   color: var(--base06);
@@ -158,13 +159,13 @@ h2 {
   /* align-items: flex-start; */
   /* flex-wrap: wrap; */
   /* align-content: flex-end; */
-  gap: 2em;
+  gap: 0.2em;
 }
 
 .smallbox {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.6em;
 }
 
 .smallbox-1 {
@@ -176,5 +177,27 @@ h2 {
   /* order: 1; */
 }
 .smallbox-2 {
+  flex-shrink: 0;
   /* flex-basis: 0; */
+}
+
+/* Scroll-to-top Button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
