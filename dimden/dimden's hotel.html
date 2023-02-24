@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dimden's hotel</title>
+    <link rel="stylesheet" href="dimden's%20hotel_files/style.css">
+    <meta name="description" content="My website and blog.">
+    <meta name="keywords" content="dimden, JS, JavaScript, discord, nes, emulators, 90s, pixels, moon, neocities">
+    <meta name="author" content="dimden">
+    <link rel="icon" href="https://dimden.dev/favicon.png">
+    <meta property="og:image" content="https://lune.dimden.dev/3c3441f37d.png">
+
+    <script async="" src="dimden's%20hotel_files/google-analytics_analytics.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-137155489-1');
+    </script>
+    <style id="flickering-style">
+@keyframes flickering {
+  0% { opacity: 0.54 }; 1% { opacity: 0.88 }; 2% { opacity: 1.24 }; 3% { opacity: 0.64 }; 4% { opacity: 0.95 }; 5% { opacity: 1.09 }; 6% { opacity: 0.58 }; 7% { opacity: 0.89 }; 8% { opacity: 0.94 }; 9% { opacity: 0.96 }; 10% { opacity: 1.14 }; 11% { opacity: 1.18 }; 12% { opacity: 0.97 }; 13% { opacity: 0.91 }; 14% { opacity: 0.35 }; 15% { opacity: 0.98 }; 16% { opacity: 0.86 }; 17% { opacity: 1.1 }; 18% { opacity: 0.5 }; 19% { opacity: 0.6 }; 20% { opacity: 0.53 }; 21% { opacity: 0.7 }; 22% { opacity: 0.97 }; 23% { opacity: 0.52 }; 24% { opacity: 0.84 }; 25% { opacity: 0.49 }; 26% { opacity: 0.55 }; 27% { opacity: 1.15 }; 28% { opacity: 0.4 }; 29% { opacity: 1.17 }; 30% { opacity: 0.59 }; 31% { opacity: 0.83 }; 32% { opacity: 0.52 }; 33% { opacity: 0.94 }; 34% { opacity: 0.92 }; 35% { opacity: 1 }; 36% { opacity: 0.55 }; 37% { opacity: 0.53 }; 38% { opacity: 1.26 }; 39% { opacity: 1.12 }; 40% { opacity: 1.27 }; 41% { opacity: 0.73 }; 42% { opacity: 0.84 }; 43% { opacity: 1.26 }; 44% { opacity: 0.73 }; 45% { opacity: 0.77 }; 46% { opacity: 1.05 }; 47% { opacity: 0.52 }; 48% { opacity: 0.5 }; 49% { opacity: undefined }; 50% { opacity: 1 }; 
+};
+    </style>
+    <style>
+@font-face {
+  font-family: "Yesterweb Monster";
+  src: url("https://cloudflare-ipfs.com/ipfs/QmaKT1nHC9JM5xmz7cRuRcB8jrkRjxdPsLaLnyzEta3e8R/MonsterFriendFore.woff") format("woff");
+}
+
+    @font-face {
+      font-family: "Yesterweb Nova Square";
+      src: url("https://cloudflare-ipfs.com/ipfs/QmaKT1nHC9JM5xmz7cRuRcB8jrkRjxdPsLaLnyzEta3e8R/NovaSquare.woff") format("woff");
+    }
+
+    .yw-widget-full:not(.yw-raw) {
+      display: block;
+      width: 190px;
+      margin: 0;
+      border: 3px double limegreen;
+      padding: 16px;
+      background-color: black;
+      background-image: url("https://cloudflare-ipfs.com/ipfs/QmaKT1nHC9JM5xmz7cRuRcB8jrkRjxdPsLaLnyzEta3e8R/gridnew.gif");
+      color: white;
+      text-align: center;
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .yw-widget-full:not(.yw-raw) a {
+      color: limegreen;
+      text-decoration: none;
+    }
+
+    .yw-widget-full:not(.yw-raw) .yw-content {
+      width: 150px;
+    }
+
+    .yw-widget-full:not(.yw-raw) .yw-title {
+      margin: 0 -8px 0 -5px;
+      font-family: "Yesterweb Monster", sans-serif;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 2px;
+    }
+
+    .yw-widget-full:not(.yw-raw) .yw-nav,
+    .yw-widget-full:not(.yw-raw) .yw-error {
+      margin-bottom: 0;
+    }
+
+    .yw-widget-full:not(.yw-raw) .yw-spinner {
+      height: 32px;
+      margin-top: 16px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("https://cloudflare-ipfs.com/ipfs/QmaKT1nHC9JM5xmz7cRuRcB8jrkRjxdPsLaLnyzEta3e8R/loading.gif");
+    }
+
+    .yw-widget-mini:not(.yw-raw) {
+      display: block;
+      width: 160px;
+      margin: 1em 0 1em 0;
+      padding: 5px;
+      background-color: #a9ff21;
+      color: black;
+      text-align: center;
+      font-family: "Yesterweb Nova Square", sans-serif;
+    }
+
+    .yw-widget-mini:not(.yw-raw) a {
+      color: #0000ff;
+      font-size: 14px;
+    }
+
+    .yw-widget-mini:not(.yw-raw) .yw-title {
+      color: black;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .yw-widget-mini:not(.yw-raw) .yw-content {
+      margin: 4px 0 4px 0;
+    }
+
+    .yw-widget-text:not(.yw-raw) {
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+    }
+
+    .yw-widget-text:not(.yw-raw) a {
+      color: limegreen;
+      text-decoration: none;
+    }</style></head>
+    <body style="font-family: FallbackMSGothic, Tahoma;">
+      <a class="skip-to" href="#home-link">
+        Skip to MENU
+      </a>
+      <img src="dimden's%20hotel_files/bg.png" id="bg">
+      <span id="debug"></span>
+      <span id="fps">61</span>
+      <div id="container">
+        <img src="dimden's%20hotel_files/wires.png" id="wires" width="922" height="126">
+        <img src="dimden's%20hotel_files/mewo.png" id="mewo">
+        <div id="logo">
+          <img src="dimden's%20hotel_files/D1.png" class="letter la" style="margin-right: -12px;" id="logo-d0">
+          <img src="dimden's%20hotel_files/IM.png" class="letter la" style="margin-right: -5px;">
+          <img src="dimden's%20hotel_files/D2.png" class="letter la" style="margin-right: -5px; filter: brightness(0.9) drop-shadow(rgba(20, 220, 187, 0.35) 0px 0px 0.75rem);" id="logo-d">
+          <img src="dimden's%20hotel_files/E.png" class="letter la" style="margin-right: -5px;">
+          <img src="dimden's%20hotel_files/N.png" class="letter la" style="margin-left: 2px;margin-bottom: -3px;position:absolute;" id="logo-n">
+        </div>
+        <table>
+          <tbody>
+            <tr>
+
+              <td id="maintd">
+                <div id="cursors"><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 0px; top: 0px;" id="cursor-43108" hidden=""><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 0px; top: 0px;" id="cursor-43192" hidden=""><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 0px; top: 0px;" id="cursor-43270" hidden=""><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 268px; top: -78.1112px;" id="cursor-43310" hidden=""><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 0px; top: 0px;" id="cursor-43350" hidden=""><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 0px; top: 0px;" id="cursor-43353" hidden=""><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 0px; top: 0px;" id="cursor-43388" hidden=""><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 0px; top: 0px;" id="cursor-43390" hidden=""><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 0px; top: 0px;" id="cursor-43392" hidden=""><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 0px; top: 0px;" id="cursor-43399" hidden=""><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 0px; top: 0px;" id="cursor-43407" hidden=""><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 0px; top: 0px;" id="cursor-43412" hidden=""><img src="dimden's%20hotel_files/cur.png" class="cursor" style="left: 0px; top: 0px;" id="cursor-43416" hidden=""></div>
+                <div class="box" id="mainbox">
+                  <img style="vertical-align: sub; margin-right: 5px;" src="dimden's%20hotel_files/moon.png" class="moon-icon">
+                  <h2 style="display:inline">Welcome to DIMDEN.DEV!</h2><br>
+                  <img src="dimden's%20hotel_files/dimden.gif" id="dimdengif">
+                  <p>
+                  This is my little website and blog. It's inspired by all these neocities
+                  sites (and my older site). It was created on June 1st, 2022.
+                  </p>
+                  <p>
+                  I'm quite obviously a programmer. I code some random things when I feel like it. You can read more about me <a href="https://dimden.dev/about.html">here!</a>
+                  </p>
+                  <span>
+                    Some quick facts:<br>
+                  </span>
+                  <ul style="margin-block-start: 5px">
+                    <li>I'm from Ukraine (and yes, I still live here).</li>
+                    <li>My main programming language is JavaScript.</li>
+                    <li>I love <span style="color: lightyellow">Moon</span> and <span style="color: lightblue">clouds</span>.</li>
+                    <li>I hate the <a href="https://dimden.dev/sun.html" style="color:red">Sun</a>.</li>
+                    <li>I'm an admin of cool website called <a href="https://ourworldofpixels.com/">OurWorldOfPixels.com</a>.</li>
+                    <li>I spend almost all my time at home chatting in my <a href="https://discord.gg/yaqzbDBaAA">Discord server</a> and doing random things on my compooter.</li>
+                    <li>I'm a home-student in some random Ukrainian CS university.</li>
+                    <li>I code websites, bots and scripts. You can also order things from me (use <a href="mailto:admin@dimden.dev">email</a>).</li>
+                  </ul>
+                  <div class="notice" id="blocknotice">
+                    <span id="close-notice">×</span>
+                    <h4 style="margin-bottom:5px;margin-top:-4px">Adblock detected</h4>
+                    <span>
+                      If website looks wrong, crappy or buggy, please disable your adblocker! This is my personal site and it has <b>no</b> real ads but it's script-heavy and things can break with it on.
+                    </span>
+                  </div>
+                </div>
+                <div class="box" style="margin-top: 10px">
+                  <a href="https://kanji.dimden.dev/" style="font-size: 12px;text-align: center;display: block;">
+                    <b>Learning Japanese!</b>
+                    <span style="color:white;text-decoration:none" id="kanji-stats">Kanji: 271 / 2074 (13.1%) • Vocab: 708 / 6531 (10.8%)</span>
+                  </a>
+                </div>
+                <div class="box" style="margin-top: 10px">
+                  <img style="vertical-align: sub; margin-right: 5px;" src="dimden's%20hotel_files/moon.png" class="moon-icon">
+                  <h2 style="display:inline">Blog</h2><br><br>
+                  <b><a href="https://dimden.dev/blog/?id=10-making-tetris-twitter-bot-with-node-js">Making Tetris in Twitter with Node.js</a></b>&nbsp;&nbsp;—&nbsp;&nbsp;Tuesday, 17th of August 2021<br>
+                  <b><a href="https://dimden.dev/blog/?id=9-utix-the-ultimate-discord-bot">Utix: The ultimate Discord bot</a></b>&nbsp;&nbsp;—&nbsp;&nbsp;Monday, 15th of February 2021<br>
+                  <b><a href="https://dimden.dev/blog/?id=8-the-migration-2">The Migration 2</a></b>&nbsp;&nbsp;—&nbsp;&nbsp;Wednesday, 26th of August 2020<br>
+                  <b><a href="https://dimden.dev/blog/?id=7-utix-website">The Utix website</a></b>&nbsp;&nbsp;—&nbsp;&nbsp;Sunday, 23th of February 2020<br>
+                  <b><a href="https://dimden.dev/blog/?id=6-brainfuck-js">brainfuck.js</a></b>&nbsp;&nbsp;—&nbsp;&nbsp;Sunday, 12th of January 2020<br>
+                  <b><a href="https://dimden.dev/blog/?id=5-the-migration">The Migration</a></b>&nbsp;&nbsp;—&nbsp;&nbsp;Friday, 16th of August 2019<br>
+                  <b><a href="https://dimden.dev/blog/?id=4-the-puzzle-3-and-stuff">The Puzzle 3 and stuff</a></b>&nbsp;&nbsp;—&nbsp;&nbsp;Tuesday, 6th of August 2019<br>
+                  <b><a href="https://dimden.dev/blog/?id=3-multiline-task-hello-world">Multi Line Task∞: Hello World</a></b>&nbsp;&nbsp;—&nbsp;&nbsp;Saturday, 25th of May 2019<br>
+                  <b><a href="https://dimden.dev/blog/?id=2-chip8js-my-first-emulator">chip8js - my first emulator</a></b>&nbsp;&nbsp;—&nbsp;&nbsp;Sunday, 12th of May 2019<br>
+                  <b><a href="https://dimden.dev/blog/?id=1-hello-world">Hello World!</a></b>&nbsp;&nbsp;—&nbsp;&nbsp;Friday, 10th of May 2019<br>
+                </div>
+                <div id="projects-banner">
+                  <a href="https://neocities.org/site/dimden" target="_blank" hidden="">
+                    <img src="dimden's%20hotel_files/neocities_002.gif" loading="lazy" width="650" height="77">
+                  </a>
+                  <a href="https://discord.gg/yaqzbDBaAA" target="_blank"><img src="dimden's%20hotel_files/discord.png" loading="lazy" width="650" height="77"></a><a href="https://github.com/dimdenGD/OldTwitter" target="_blank" hidden=""><img src="dimden's%20hotel_files/oldtwitter.gif" loading="lazy" width="650" height="77"></a><a href="https://utix.dev/" target="_blank" hidden=""><video src="dimden's%20hotel_files/utix.mp4" loop="" autoplay="autoplay" width="650" height="77"></video></a></div>
+                <div class="box" style="margin-top: 10px;">
+                  <a href="https://systemspace.dimden.dev/" id="systemspace-link"><img src="dimden's%20hotel_files/tsuki_knob.png" alt="SYSTEMSPACE"></a>
+                  <img id="rainworld-platform" src="dimden's%20hotel_files/platform.png">
+                  <a id="rainworld-slugcat" href="https://dimden.dev/complex.html"><img src="dimden's%20hotel_files/slugcat.png"></a>
+                  <img style="vertical-align: sub; margin-right: 5px;" src="dimden's%20hotel_files/moon.png" class="moon-icon">
+                  <h2 style="display:inline">Projects</h2>
+
+                  <br><br>
+                  <a target="_blank" href="https://utix.dev/"><h3>☾ Utix</h3></a><br>
+                  My Discord bot Utix. It's a bot for basically everything: programming, math, astronomy, chemistry, etc. <a target="_blank" href="https://utix.dev/">Link</a>
+                  <br><br>
+                  <a target="_blank" rel="nofollow" href="https://frizwoods.com/"><h3>☾ Frizwoods</h3></a><br>
+                  One of serious projects I made for my friend opening law firm. Text is 
+                  fully customizable on site and has nice article engine I made. <a target="_blank" href="https://frizwoods.com/">Link</a>
+                  <br><br>
+                  <a target="_blank" rel="nofollow" href="https://github.com/dimdenGD/OldTwitter/"><h3>☾ OldTwitter</h3></a><br>
+                  Chrome &amp; Firefox extension to return old Twitter UI from 2015. <a target="_blank" href="https://github.com/dimdenGD/OldTwitter/">Link</a>
+                  <br><br>
+                  <a target="_blank" rel="nofollow" href="https://nekoweb.org/"><h3>☾ Nekoweb</h3></a><br>
+                  My own web-hosting, similar to Neocities but cooler!! It has a number of
+                  improvements so if you're looking to move check it out! <a target="_blank" href="https://nekoweb.org/">Link</a>
+                  <br><br>
+                  <a target="_blank" rel="nofollow" href="https://dimden.dev/grillbys"><h3>☾ Grillby's Multiplayer</h3></a><br>
+                  A small multiplayer game where you can chill in Grillby's ((C) UNDERTALE). <a target="_blank" href="https://dimden.dev/grillbys">Link</a>
+                  <br><br>
+                  <a target="_blank" href="https://dimden.dev/cyberbiology"><h3>☾ Cyberbiology</h3></a><br>
+                  A 'game' where cells have DNA and can evolve. <a target="_blank" href="https://dimden.dev/cyberbiology">Link</a>
+                  <br><br>
+                  <b>And couple of other projects:</b><br><br>
+                  <span>
+                    <a target="_blank" href="https://opm.dimden.dev/">OPM</a> ✩
+                    <a target="_blank" href="https://dimden.dev/puzzle3">Puzzle</a> ✩
+                    <a target="_blank" href="https://dimden.dev/chip8">chip8.js</a> ✩
+
+                    <a target="_blank" href="https://github.com/dimdenGD/discord-oled-theme">Discord OLED Theme</a> ✩
+                    <a target="_blank" href="https://github.com/dimdenGD/OWOP.js_v2">OWOP.js</a> ✩
+                    <a target="_blank" href="https://github.com/dimdenGD/blackjack-js">Blackjack.js</a> ✩
+                    <a target="_blank" href="https://github.com/dimdenGD/Brutal.js">Brutal.io client</a> ✩
+                    <a target="_blank" href="https://systemspace.dimden.dev/">Systemspace Archive</a> ✩
+                    <a target="_blank" href="https://dimden.dev/beautifier/">JS "beautifier"</a>
+                  </span>
+                </div>
+                <div style="margin-top:10px">
+                  <marquee>
+                  <span style="color:white">THANK YOU MY <a href="https://www.patreon.com/dimdendev" target="_blank">PATRONS</a>:
+                    <span>%月(DOX)月, <a href="https://dzshn.xyz/" target="_blank">dzshn</a>, Sylvester</span>
+                  </span></marquee>
+                </div>
+                <div class="box terminal" style="margin-top: 10px;">
+                  <span>Systems status: <span id="system-status" class="status-ok">OK</span><br>
+                    <br>
+                    <table>
+                      <tbody>
+                        <tr id="statuses">
+                          <td>
+                            <span>[<span id="dimdendev-status" class="status-ok"> OK </span>] dimden.dev</span><br>
+                            <span>[<span id="proxy-status" class="status-ok"> OK </span>] proxy</span><br>
+                            <span>[<span id="utix-status" class="status-ok"> OK </span>] utix.dev</span><br>
+                            <span>[<span id="frizwoods-status" class="status-ok"> OK </span>] frizwoods</span><br>
+                          </td>
+                          <td>
+                            <span>[<span id="slave-status" class="status-ok"> OK </span>] slave</span><br>
+                            <span>[<span id="owopbot-status" class="status-ok"> OK </span>] owopbot</span><br>
+                            <span>[<span id="cnplt-status" class="status-ok"> OK </span>] cnplt</span><br>
+                            <span>[<span id="lune-status" class="status-ok"> OK </span>] lune.dimden.dev</span><br>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </span></div>
+                  <div id="chat" class="box" style="margin-top: 10px;">
+                    <img style="vertical-align: sub; margin-right: 5px;" src="dimden's%20hotel_files/chat.png" height="24">
+                    <h2 style="display:inline">Chat</h2>
+                    <b id="hotel">ホテル</b>
+                    <br><br>
+                    <div id="messages">
+                      <noscript>
+                        <span style="color:red" class="chat-msg">wahh!! javascript is disabled :(</span><br><br>
+                      </noscript>
+                      <span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> thank you :3c</span><span class="chat-date" title="18:09:01 in Ukraine"> 2/20/2023, 10:09:01 AM</span><br><span class="chat-name">&lt;Anonymous40635&gt; </span><span class="chat-msg "> yw!</span><span class="chat-date" title="18:09:04 in Ukraine"> 2/20/2023, 10:09:04 AM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> are you justine </span><span class="chat-date" title="18:09:21 in Ukraine"> 2/20/2023, 10:09:21 AM</span><br><span class="chat-name">&lt;Anonymous40635&gt; </span><span class="chat-msg "> no</span><span class="chat-date" title="18:09:26 in Ukraine"> 2/20/2023, 10:09:26 AM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> ok lol nvm then</span><span class="chat-date" title="18:09:33 in Ukraine"> 2/20/2023, 10:09:33 AM</span><br><span class="chat-name">&lt;Anonymous40658&gt; </span><span class="chat-msg "> helloo</span><span class="chat-date" title="18:37:49 in Ukraine"> 2/20/2023, 10:37:49 AM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> hellooo</span><span class="chat-date" title="18:37:54 in Ukraine"> 2/20/2023, 10:37:54 AM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> quite an increased traffic today</span><span class="chat-date" title="18:38:01 in Ukraine"> 2/20/2023, 10:38:01 AM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> what brings you here</span><span class="chat-date" title="18:38:03 in Ukraine"> 2/20/2023, 10:38:03 AM</span><br><span class="chat-name">&lt;Anonymous40629&gt; </span><span class="chat-msg "> hellur</span><span class="chat-date" title="18:38:09 in Ukraine"> 2/20/2023, 10:38:09 AM</span><br><span class="chat-name">&lt;Anonymous40658&gt; </span><span class="chat-msg "> was flipping through my tabs and forgot I wanted to explore your website! It’s awesome</span><span class="chat-date" title="18:38:37 in Ukraine"> 2/20/2023, 10:38:37 AM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> awesom</span><span class="chat-date" title="18:38:56 in Ukraine"> 2/20/2023, 10:38:56 AM</span><br><span class="chat-name">&lt;Anonymous40662&gt; </span><span class="chat-msg "> hi</span><span class="chat-date" title="18:41:56 in Ukraine"> 2/20/2023, 10:41:56 AM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> hi</span><span class="chat-date" title="18:43:25 in Ukraine"> 2/20/2023, 10:43:25 AM</span><br><span class="chat-name">&lt;Anonymous40896&gt; </span><span class="chat-msg "> ...</span><span class="chat-date" title="22:43:16 in Ukraine"> 2/20/2023, 2:43:16 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> ...</span><span class="chat-date" title="22:43:21 in Ukraine"> 2/20/2023, 2:43:21 PM</span><br><span class="chat-name">&lt;Anonymous40896&gt; </span><span class="chat-msg "> 🐔</span><span class="chat-date" title="22:43:43 in Ukraine"> 2/20/2023, 2:43:43 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> chimkin</span><span class="chat-date" title="22:43:50 in Ukraine"> 2/20/2023, 2:43:50 PM</span><br><span class="chat-name">&lt;Anonymous40896&gt; </span><span class="chat-msg "> bok</span><span class="chat-date" title="22:43:53 in Ukraine"> 2/20/2023, 2:43:53 PM</span><br><span class="chat-name">&lt;axiom40905&gt; </span><span class="chat-msg "> Really cool website. Check out ENA on youtube, based on your favorites you might like it</span><span class="chat-date" title="22:54:48 in Ukraine"> 2/20/2023, 2:54:48 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> is ENA that yellow blue girl</span><span class="chat-date" title="22:55:37 in Ukraine"> 2/20/2023, 2:55:37 PM</span><br><span class="chat-name">&lt;axiom40920&gt; </span><span class="chat-msg "> Yeah, the videos just give a strong old internet vibe, especially temptation stairway </span><span class="chat-date" title="23:00:31 in Ukraine"> 2/20/2023, 3:00:31 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> i wanted to watch it but never got to it</span><span class="chat-date" title="23:00:44 in Ukraine"> 2/20/2023, 3:00:44 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> some day</span><span class="chat-date" title="23:00:45 in Ukraine"> 2/20/2023, 3:00:45 PM</span><br><span class="chat-name">&lt;MollyZen40925&gt; </span><span class="chat-msg "> cool website! really like it</span><span class="chat-date" title="23:03:21 in Ukraine"> 2/20/2023, 3:03:21 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> thank you</span><span class="chat-date" title="23:03:26 in Ukraine"> 2/20/2023, 3:03:26 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> where did you find it from</span><span class="chat-date" title="23:03:34 in Ukraine"> 2/20/2023, 3:03:34 PM</span><br><span class="chat-name">&lt;MollyZen40925&gt; </span><span class="chat-msg ">
+                        well, i think personal website are rather cool in general, when they 
+                        aren’t just programmers posting their generic looking portfolios</span><span class="chat-date" title="23:04:28 in Ukraine"> 2/20/2023, 3:04:28 PM</span><br><span class="chat-name">&lt;MollyZen40925&gt; </span><span class="chat-msg "> so i went to reddit to search for some personal ones that capture the feeling of the old web</span><span class="chat-date" title="23:04:50 in Ukraine"> 2/20/2023, 3:04:50 PM</span><br><span class="chat-name">&lt;MollyZen40925&gt; </span><span class="chat-msg "> of the times i didnt really witness</span><span class="chat-date" title="23:05:08 in Ukraine"> 2/20/2023, 3:05:08 PM</span><br><span class="chat-name">&lt;Anonymous40809&gt; </span><span class="chat-msg "> omg it has a chat</span><span class="chat-date" title="23:05:43 in Ukraine"> 2/20/2023, 3:05:43 PM</span><br><span class="chat-name">&lt;Anonymous40809&gt; </span><span class="chat-msg "> hii</span><span class="chat-date" title="23:05:46 in Ukraine"> 2/20/2023, 3:05:46 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> helo</span><span class="chat-date" title="23:05:51 in Ukraine"> 2/20/2023, 3:05:51 PM</span><br><span class="chat-name">&lt;MollyZen40925&gt; </span><span class="chat-msg "> :3</span><span class="chat-date" title="23:05:54 in Ukraine"> 2/20/2023, 3:05:54 PM</span><br><span class="chat-name">&lt;MollyZen40925&gt; </span><span class="chat-msg "> and i am glad i found this place! might actually take some inspiration if i actually decide to make one for myself</span><span class="chat-date" title="23:06:30 in Ukraine"> 2/20/2023, 3:06:30 PM</span><br><span class="chat-name">&lt;MollyZen40925&gt; </span><span class="chat-msg "> i prefer to store all the data locally on my home nas-server so self-hosting a personal website with a blog sounds neat</span><span class="chat-date" title="23:07:06 in Ukraine"> 2/20/2023, 3:07:06 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> if you like my site you should check </span><span class="chat-date" title="23:07:40 in Ukraine"> 2/20/2023, 3:07:40 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> <a href="https://neocities.org/browse" target="_blank">https://neocities.org/browse</a></span><span class="chat-date" title="23:07:41 in Ukraine"> 2/20/2023, 3:07:41 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> theres billion other creative sites like mine there</span><span class="chat-date" title="23:07:48 in Ukraine"> 2/20/2023, 3:07:48 PM</span><br><span class="chat-name">&lt;MollyZen40925&gt; </span><span class="chat-msg "> i aint gonna lie - **** goes insanely hard</span><span class="chat-date" title="23:08:54 in Ukraine"> 2/20/2023, 3:08:54 PM</span><br><span class="chat-name">&lt;MollyZen40925&gt; </span><span class="chat-msg "> ?a ?a*? ??????</span><span class="chat-date" title="23:09:08 in Ukraine"> 2/20/2023, 3:09:08 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> its the last frontier of old web </span><span class="chat-date" title="23:09:09 in Ukraine"> 2/20/2023, 3:09:09 PM</span><br><span class="chat-name">&lt;MollyZen40925&gt; </span><span class="chat-msg "> cyrill breaks chat a little lol</span><span class="chat-date" title="23:09:21 in Ukraine"> 2/20/2023, 3:09:21 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> im working on my own web hosting for old sites </span><span class="chat-date" title="23:09:35 in Ukraine"> 2/20/2023, 3:09:35 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> <a href="https://nekoweb.org/" target="_blank">https://nekoweb.org/</a></span><span class="chat-date" title="23:09:37 in Ukraine"> 2/20/2023, 3:09:37 PM</span><br><span class="chat-name">&lt;MollyZen40925&gt; </span><span class="chat-msg "> cycillic (s?)</span><span class="chat-date" title="23:09:38 in Ukraine"> 2/20/2023, 3:09:38 PM</span><br><span class="chat-name">&lt;MollyZen40925&gt; </span><span class="chat-msg "> you get it</span><span class="chat-date" title="23:09:49 in Ukraine"> 2/20/2023, 3:09:49 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> its in works so it just redirects to discord rn</span><span class="chat-date" title="23:09:52 in Ukraine"> 2/20/2023, 3:09:52 PM</span><br><span class="chat-name">&lt;ariu41257&gt; </span><span class="chat-msg "> hey</span><span class="chat-date" title="05:34:57 in Ukraine"> 2/20/2023, 9:34:57 PM</span><br><span class="chat-name">&lt;ariu41257&gt; </span><span class="chat-msg "> it says ur offline</span><span class="chat-date" title="05:35:09 in Ukraine"> 2/20/2023, 9:35:09 PM</span><br><span class="chat-name">&lt;ariu41257&gt; </span><span class="chat-msg "> i can see ur cursor tho</span><span class="chat-date" title="05:35:14 in Ukraine"> 2/20/2023, 9:35:14 PM</span><br><span class="chat-name">&lt;sodium41248&gt; </span><span class="chat-msg "> no u</span><span class="chat-date" title="05:35:35 in Ukraine"> 2/20/2023, 9:35:35 PM</span><br><span class="chat-name">&lt;SNP Media41521&gt; </span><span class="chat-msg "> sup fools :D</span><span class="chat-date" title="10:51:21 in Ukraine"> 2/21/2023, 2:51:21 AM</span><br><span class="chat-name">&lt;SNP Media41521&gt; </span><span class="chat-msg "> this is weird lmao, i installed something on my computer to allow me to have 2 pointers and its so trippy on this site lmao</span><span class="chat-date" title="10:52:31 in Ukraine"> 2/21/2023, 2:52:31 AM</span><br><span class="chat-name">&lt;SNP Media41522&gt; </span><span class="chat-msg "> both of these are me lmao</span><span class="chat-date" title="10:53:15 in Ukraine"> 2/21/2023, 2:53:15 AM</span><br><span class="chat-name">&lt;Anonymous41614&gt; </span><span class="chat-msg "> No hablo ingles pero la pagina ta piola</span><span class="chat-date" title="12:21:40 in Ukraine"> 2/21/2023, 4:21:40 AM</span><br><span class="chat-name">&lt;cvrs42051&gt; </span><span class="chat-msg "> meooowww</span><span class="chat-date" title="20:18:24 in Ukraine"> 2/21/2023, 12:18:24 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> meow</span><span class="chat-date" title="20:18:52 in Ukraine"> 2/21/2023, 12:18:52 PM</span><br><span class="chat-name">&lt;Anonymous42063&gt; </span><span class="chat-msg "> meooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooow</span><span class="chat-date" title="20:27:40 in Ukraine"> 2/21/2023, 12:27:40 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> mew</span><span class="chat-date" title="20:27:46 in Ukraine"> 2/21/2023, 12:27:46 PM</span><br><span class="chat-name">&lt;cvrs42051&gt; </span><span class="chat-msg "> meoooooow</span><span class="chat-date" title="20:27:48 in Ukraine"> 2/21/2023, 12:27:48 PM</span><br><span class="chat-name">&lt;cvrs42051&gt; </span><span class="chat-msg "> around the world</span><span class="chat-date" title="20:28:31 in Ukraine"> 2/21/2023, 12:28:31 PM</span><br><span class="chat-name">&lt;Anonymous42076&gt; </span><span class="chat-msg "> anyone here?</span><span class="chat-date" title="20:44:17 in Ukraine"> 2/21/2023, 12:44:17 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> yeah</span><span class="chat-date" title="20:44:21 in Ukraine"> 2/21/2023, 12:44:21 PM</span><br><span class="chat-name">&lt;Anonymous42076&gt; </span><span class="chat-msg "> meow</span><span class="chat-date" title="20:44:31 in Ukraine"> 2/21/2023, 12:44:31 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> meow</span><span class="chat-date" title="20:44:40 in Ukraine"> 2/21/2023, 12:44:40 PM</span><br><span class="chat-name">&lt;Anonymous42076&gt; </span><span class="chat-msg "> are you from the future?</span><span class="chat-date" title="20:45:45 in Ukraine"> 2/21/2023, 12:45:45 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> ye</span><span class="chat-date" title="20:45:57 in Ukraine"> 2/21/2023, 12:45:57 PM</span><br><span class="chat-name">&lt;Anonymous42076&gt; </span><span class="chat-msg "> take me with you pleeeeeease</span><span class="chat-date" title="20:46:23 in Ukraine"> 2/21/2023, 12:46:23 PM</span><br><span class="chat-name">&lt;Anonymous42076&gt; </span><span class="chat-msg "> i don’t like it here</span><span class="chat-date" title="20:46:48 in Ukraine"> 2/21/2023, 12:46:48 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> well</span><span class="chat-date" title="20:46:56 in Ukraine"> 2/21/2023, 12:46:56 PM</span><br><span class="chat-name">&lt;Anonymous42076&gt; </span><span class="chat-msg "> it says here you’re learning japanese, when did you start?</span><span class="chat-date" title="20:48:24 in Ukraine"> 2/21/2023, 12:48:24 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> its halted until im not as busy </span><span class="chat-date" title="20:48:35 in Ukraine"> 2/21/2023, 12:48:35 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> i did it for 2 months </span><span class="chat-date" title="20:48:40 in Ukraine"> 2/21/2023, 12:48:40 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> busy as **** though</span><span class="chat-date" title="20:48:49 in Ukraine"> 2/21/2023, 12:48:49 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> now</span><span class="chat-date" title="20:48:51 in Ukraine"> 2/21/2023, 12:48:51 PM</span><br><span class="chat-name">&lt;Anonymous42076&gt; </span><span class="chat-msg "> oh </span><span class="chat-date" title="20:48:57 in Ukraine"> 2/21/2023, 12:48:57 PM</span><br><span class="chat-name">&lt;astro42178&gt; </span><span class="chat-msg "> i customized my win10 cursor as spamton so its really fun to come here and mingle with the arrow cursors. spam dance</span><span class="chat-date" title="22:56:52 in Ukraine"> 2/21/2023, 2:56:52 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> hi</span><span class="chat-date" title="23:38:06 in Ukraine"> 2/21/2023, 3:38:06 PM</span><br><span class="chat-name">&lt;Anonymous42206&gt; </span><span class="chat-msg "> HIIIIII</span><span class="chat-date" title="23:38:10 in Ukraine"> 2/21/2023, 3:38:10 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> milaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span><span class="chat-date" title="23:38:13 in Ukraine"> 2/21/2023, 3:38:13 PM</span><br><span class="chat-name">&lt;Anonymous42206&gt; </span><span class="chat-msg "> HI DIMDEN BRUV</span><span class="chat-date" title="23:38:23 in Ukraine"> 2/21/2023, 3:38:23 PM</span><br><span class="chat-name">&lt;Anonymous42206&gt; </span><span class="chat-msg "> i cant im shy </span><span class="chat-date" title="23:38:49 in Ukraine"> 2/21/2023, 3:38:49 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> cant what</span><span class="chat-date" title="23:38:59 in Ukraine"> 2/21/2023, 3:38:59 PM</span><br><span class="chat-name">&lt;Anonymous42206&gt; </span><span class="chat-msg "> no more cursor </span><span class="chat-date" title="23:39:22 in Ukraine"> 2/21/2023, 3:39:22 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> but here's the hider</span><span class="chat-date" title="23:39:29 in Ukraine"> 2/21/2023, 3:39:29 PM</span><br><span class="chat-name">&lt;Anonymous42206&gt; </span><span class="chat-msg "> cool af</span><span class="chat-date" title="23:39:51 in Ukraine"> 2/21/2023, 3:39:51 PM</span><br><span class="chat-name">&lt;Anonymous42206&gt; </span><span class="chat-msg "> im joker smilin </span><span class="chat-date" title="23:40:03 in Ukraine"> 2/21/2023, 3:40:03 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> but here's the smiler</span><span class="chat-date" title="23:40:11 in Ukraine"> 2/21/2023, 3:40:11 PM</span><br><span class="chat-name">&lt;Anonymous42206&gt; </span><span class="chat-msg "> hehe</span><span class="chat-date" title="23:40:55 in Ukraine"> 2/21/2023, 3:40:55 PM</span><br><span class="chat-name">&lt;Anonymous42291&gt; </span><span class="chat-msg "> what happened to CrismonOWOP?</span><span class="chat-date" title="01:04:31 in Ukraine"> 2/21/2023, 5:04:31 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> nothing</span><span class="chat-date" title="01:16:08 in Ukraine"> 2/21/2023, 5:16:08 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> it still exists</span><span class="chat-date" title="01:16:11 in Ukraine"> 2/21/2023, 5:16:11 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> wait</span><span class="chat-date" title="01:16:22 in Ukraine"> 2/21/2023, 5:16:22 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> **** i unlocked memory</span><span class="chat-date" title="01:16:26 in Ukraine"> 2/21/2023, 5:16:26 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> wow</span><span class="chat-date" title="01:16:27 in Ukraine"> 2/21/2023, 5:16:27 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> its been so long</span><span class="chat-date" title="01:16:30 in Ukraine"> 2/21/2023, 5:16:30 PM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> it died like 4 years ago </span><span class="chat-date" title="01:16:34 in Ukraine"> 2/21/2023, 5:16:34 PM</span><br><span class="chat-name">&lt;mtboss12442335&gt; </span><span class="chat-msg "> Nice web site</span><span class="chat-date" title="01:48:47 in Ukraine"> 2/21/2023, 5:48:47 PM</span><br><span class="chat-name">&lt;Anonymous43059&gt; </span><span class="chat-msg "> Uncaught TypeError: this.stop is not a function at HTMLSpanElement.onmouseover ((index):260:97)</span><span class="chat-date" title="17:47:18 in Ukraine"> 9:47:18 AM</span><br><span class="chat-name chat-name-admin">!&lt;dimden.dev&gt; </span><span class="chat-msg "> sad</span><span class="chat-date" title="19:22:05 in Ukraine"> 11:22:05 AM</span><br><span class="chat-name chat-name-local">&lt;LOCAL&gt; </span><span class="chat-msg chat-msg-local"> Welcome to chat. Use /nick to set a nick.</span><span class="chat-date" title="00:14:28 in Ukraine"> 4:14:28 PM</span><br></div>
+                    <div id="bar" style="margin-top:4px">
+                      <input type="text" id="message" placeholder="Enter message - please be nice!" autocomplete="off" maxlength="300">
+                      <button id="send">Send</button>
+                    </div>
+                  </div>
+              </td>
+
+              <td id="menutd" style="max-width: 225px">
+                <div class="box" id="linksdiv">
+                  <img style="vertical-align: top; margin-right: 5px; position:relative;cursor:pointer" src="dimden's%20hotel_files/warpstar.png" id="kirby">
+                  <h2 style="display:inline">Stars</h2>
+                  <img src="dimden's%20hotel_files/electricity_on.png" id="switch">
+                  <br><br>
+                  <a class="navlink" href="https://dimden.dev/" id="home-link">✩ Home</a><br>
+                  <a class="navlink" href="https://dimden.dev/about.html" id="about-link">✩ About me<span style="color:red;vertical-align: super;font-size: 12px;margin-left:3px">new!</span></a><br>
+                  <a class="navlink" href="https://dimden.dev/blogindex" style="color: white;">✩ Blog</a><br>
+                  <a class="navlink" target="_blank" href="https://neocities.org/site/dimden" style="color: white;">✩ Neocities page</a>
+                  <b><a class="navlink" target="_blank" href="https://discord.gg/yaqzbDBaAA" style="color: white;">✩ Discord</a></b> <i style="color:gray">&lt;-- join!!</i><br>
+                  <a class="navlink" href="https://dimden.123guestbook.com/" style="color: rgb(44, 144, 128);">✩ Guestbook</a><br>
+                  <a class="navlink" target="_blank" href="https://twitter.com/dimdenEFF" style="color: white;">✩ Twitter</a><br>
+                  <a class="navlink" target="_blank" href="https://github.com/dimdenGD" style="color: white;">✩ GitHub</a><br>
+                  <a class="navlink" target="_blank" href="https://www.patreon.com/dimdendev" style="color: white;">✩ Patreon <img src="dimden's%20hotel_files/smoldimden.png" style="vertical-align: middle; float:right; margin-top:-9px;margin-left:2px"></a><br>
+                  <a class="navlink" href="https://dimden.dev/navlinkads" style="color: white;">✩ NavLink Ads</a><br>
+                  <a class="navlink" href="https://dimden.dev/gallery">✩ OC Gallery</a><br>
+                  <a class="navlink" href="mailto:admin@dimden.dev" style="color: white;">✩ E-mail <img src="dimden's%20hotel_files/mail.png" style="vertical-align: bottom;margin-left: 3px;"></a><br>
+                </div>
+                <div class="box centerbox" style="margin-top: 10px;margin-bottom: 10px;">
+                  <div id="pre-moon">
+                    <img src="dimden's%20hotel_files/dimdenomori2.png" alt="corruption" style="position: absolute;z-index:-10;filter: brightness(0.1);margin-left: 57px;" class="corruption">
+                    <iframe src="dimden's%20hotel_files/moon.html" allowtransparency="true" style="border:none" id="moon-iframe" width="180" height="160"></iframe>
+                  </div>
+                </div>
+                <a class="skip-to" href="#musicbox">
+                  Skip buttons
+                </a>
+                <marquee scrollamount="3" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();" id="buttons-misc">
+                <a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a>
+                <a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a>
+                <img src="dimden's%20hotel_files/win95.gif">
+                <a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a>
+                <img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif">
+                <img src="dimden's%20hotel_files/asswolf_txt.gif">
+                <img src="dimden's%20hotel_files/krisbtn.png">
+                <img src="dimden's%20hotel_files/debian.gif">
+                <img src="dimden's%20hotel_files/phonechump.gif">
+                <img src="dimden's%20hotel_files/jquery.gif">
+                <img src="dimden's%20hotel_files/best_chrome.gif">
+                <img src="dimden's%20hotel_files/madewithnotepad2.gif">
+                <img src="dimden's%20hotel_files/neocities.gif">
+                <a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"><a rel="nofollow" href="https://deepstatemap.live/" target="_blank"><img src="dimden's%20hotel_files/atlas.gif"></a><a rel="nofollow" href="https://boxy.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/gaygoogle.gif"></a><img src="dimden's%20hotel_files/win95.gif"><a rel="nofollow" target="_blank" href="https://undertale.com/"><img src="dimden's%20hotel_files/undertale.gif"></a><img src="dimden's%20hotel_files/beekeeping_in_ukraine.gif"><img src="dimden's%20hotel_files/asswolf_txt.gif"><img src="dimden's%20hotel_files/krisbtn.png"><img src="dimden's%20hotel_files/debian.gif"><img src="dimden's%20hotel_files/phonechump.gif"><img src="dimden's%20hotel_files/jquery.gif"><img src="dimden's%20hotel_files/best_chrome.gif"><img src="dimden's%20hotel_files/madewithnotepad2.gif"><img src="dimden's%20hotel_files/neocities.gif"></marquee>
+                <i id="cool-sites">&lt;-- cool sites</i>
+                <marquee scrollamount="3" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();" direction="right" id="buttons-sites">
+                <a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a>
+                <a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a>
+                <a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a>
+                <a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a>
+                <a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a>
+                <a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a>
+                <a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a>
+                <a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a><a rel="noopener" target="_blank" href="https://dokodemo.neocities.org/index.html"><img src="dimden's%20hotel_files/dokodemobutton3.gif"></a><a rel="noopener" target="_blank" href="https://dzshn.xyz/"><img src="dimden's%20hotel_files/dzshn.gif"></a><a rel="noopener" href="https://melps.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/limk1.jpg" width="88px"></a><a rel="noopener" href="https://cinni.net/" target="_blank"><img src="dimden's%20hotel_files/cinni.gif" width="88px"></a><a rel="noopener" href="https://fauux.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/fauux.gif" width="88px"></a><a rel="noopener" href="https://roachstarz.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/rchstrzbutton.gif"></a><a rel="noopener" href="https://pocl.neocities.org/" target="_blank"><img src="dimden's%20hotel_files/poclbutton.gif"></a></marquee>
+                <div class="box centerbox" style="margin-top: 5px">
+                  <noscript>
+                    <span style="color:red">wahh!! javascript is disabled :(</span><br><br>
+                  </noscript>
+                  I'm <h2 id="status" style="color: lime; text-shadow: rgba(4, 255, 214, 0) 0px 0px 10px, rgba(0, 255, 236, 0.17) 0px 0px 20px, rgba(2, 230, 0, 0.17) 0px 0px 30px, rgba(0, 230, 178, 0) 0px 0px 40px, rgba(0, 230, 27, 0.24) 0px 0px 50px, rgba(0, 230, 178, 0) 0px 0px 60px, rgba(0, 230, 122, 0) 0px 0px 70px;">Online!</h2>
+                </div>
+                <div class="box" style="margin-top: 10px">
+                  <noscript style="text-align:center;display:block">
+                    <span style="color:red">wahh!! javascript is disabled :(</span><br><br>
+                  </noscript>
+                  <div class="blob" id="pulser"></div> <b id="currentlylistening">Currently listening:</b><br><br>
+                  <a href="https://www.last.fm/music/strxwberrymilk/_/I%27ll+Go+Home+Then+-+Radio+Edit" id="songlink" target="_blank">
+                    <div id="musicbox">
+                      <img src="dimden's%20hotel_files/d5d8ff5009ccd0154dbee0ff29e60219.webp" id="albumcover" width="50" height="50">
+                      <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3" id="songname">I'll Go Home Then - Radio Edit</marquee>
+                      <span id="artist">strxwberrymilk</span>
+                    </div>
+                  </a>
+                  <span id="lastplayed" style="color:gray"></span>
+                </div>
+                <div class="box centerbox" style="margin-top: 10px;">
+                  <img id="my-button" src="dimden's%20hotel_files/88x31.gif"><br><br>
+                  <textarea style="width:155px" readonly="readonly">&lt;a href="https://dimden.dev/"&gt;&lt;img src="https://dimden.dev/services/images/88x31.gif"&gt;&lt;/a&gt;</textarea><br>
+                  <span style="color:gray;margin-top:5px;display:block">DO hotlink my button! <span style="cursor:pointer" onclick="document.getElementById('why-hotlink').hidden = !document.getElementById('why-hotlink').hidden">[?]</span>
+                    <div id="why-hotlink" style="font-size:12px" hidden="">
+                      <br>
+                      <span>
+                        You might see people saying that hotlinking is bad.<br>
+                        But the issues discussed there do not apply to my site - i have endless bandwidth.<br>
+                        I want to be able to change my button any time I want, without having to ask people to change it.<br>
+                      </span>
+                    </div>
+                  </span></div>
+
+                  <div class="box centerbox" style="margin-top: 10px">
+                    <a rel="nofollow" href="https://hotlinewebring.club/dimden/previous" id="hotline-previous">&lt;-</a> Hotline Webring <a rel="nofollow" href="https://hotlinewebring.club/dimden/next" id="hotline-next">-&gt;</a>
+                  </div>
+                  <div class="centerbox" style="margin-top: 10px; display: flex; place-content: center">
+                    <div id="pre-banner">
+                      <iframe style="border:none" src="dimden's%20hotel_files/a.html" name="neolink" width="212" height="212"></iframe>
+                    </div>
+                  </div>
+                  <div class="box" style="margin-top: 10px">
+                    <div id="pre-yw">
+                      <div class="yw-widget-full yw-widget" data-yw-url="https://dimden.dev/" style="width:142px" data-yw-ready="true"><div class="yw-body">
+                          <h4 class="yw-title">Yesterweb Ring</h4>
+                          <div class="yw-content"><p class="yw-notice">
+                            This site, <strong><a class="yw-site-name" href="https://dimden.dev/">dimden's hotel</a></strong>, is keeping the old web alive.
+                            Thanks, <strong class="yw-site-owner">dimden</strong>!
+                            </p>
+                            <p class="yw-nav">
+                            <a class="yw-link-next yw-link" href="https://kibls.neocities.org/">[Next]</a>
+                            <a class="yw-link-prev yw-link" href="https://cyberteeth.neocities.org/">[Prev]</a>
+                            <a class="yw-link-rand yw-link" href="https://www.esgeroth.org/">[Rand]</a>
+                            <br>
+                            <a class="yw-link-home yw-link" href="https://yesterweb.org/webring/members.html">[Members]</a>
+                            </p></div>
+                        </div></div>
+                    </div>
+                  </div>
+                  <script src="dimden's%20hotel_files/widget.js" async=""></script>
+                  <div class="box" style="margin-top: 10px">
+                    <div id="pre-hit">
+                      <iframe style="border:none" src="dimden's%20hotel_files/hitcounter.html" name="hitcounter" width="180" height="60"></iframe>
+                    </div>
+                  </div>
+                  <div class="box" id="hidemycursor-div" style="margin-top: 10px">
+                    <input type="checkbox" id="hidemycursor" checked="checked"> <label for="hidemycursor">Hide my cursor</label>
+                  </div>
+                  <div style="margin-top:10px;text-align-last:center">
+                    <a href="https://dimden.dev/warm.html">
+                      <img id="kelvin" class="kelvin-light" src="dimden's%20hotel_files/kelvin.gif" width="178" height="152">
+                    </a>
+                  </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <footer>
+          <span>Join my <a href="https://discord.gg/yaqzbDBaAA" target="_blank">Discord server</a>!!! Please!!!!!</span>
+          <br><br>
+          <span id="copyright">(c) 2019-2023 dimden. All Rights Reserved.</span><br>
+          <a href="mailto:admin@dimden.dev">admin@dimden.dev</a>
+          <br><br>
+          <div id="brimstone" hidden="">
+            <img src="dimden's%20hotel_files/sulphur.png" alt="Brimstone" id="sulphur">
+            <img src="dimden's%20hotel_files/sulphur.png" alt="Hidden Brimstone" id="hidden-sulphur-1">
+          </div>
+          <br>
+        </footer>
+        <iframe src="https://dimden.neocities.org/iframe.html" style="display:none"></iframe>
+        <br>
+      </div>
+      <canvas id="rain-canvas" width="1236" height="972"></canvas>
+      <canvas style="width:100%" id="doom-canvas" width="800" height="350"></canvas>
+      <div id="backside" hidden="">
+        <div id="backside-container">
+          <a href="https://dimden.dev/" style="margin-left: 347px;top: 12px;position:absolute;color:red!important;">please let me go please let me</a>
+          <img id="butler" src="dimden's%20hotel_files/BUTLER.png">
+          <span style="top:100px;position:relative">WELCOME TO THE BACK SIDE OF MY SITE!!! PLEASE KEEP YOUR HEAD BEHIND THESE DIVS TO NOT SPOOK THE NORMAL HUMANS</span>
+          <img src="dimden's%20hotel_files/gods_grace.jpg" style="position: absolute;top: 225px;margin-left: 250px;" alt="gods grace" title="gods grace">
+          <img src="dimden's%20hotel_files/toby.png" style="position: absolute;top: 360px;margin-left: 250px;" alt="why cant i be">
+          <img src="dimden's%20hotel_files/gods_grace2c.jpg" style="position: absolute;top: 613px;margin-left: -124px;" alt="gods grace" title="gods grace" width="300">
+          <a href="https://dimden.dev/tv.html" target="_blank"><img src="dimden's%20hotel_files/tv.gif" style="position: absolute;top: 162px;margin-left: -70px;" alt="tv"></a>
+          <span style="margin-left: -50pxpx;top: 290px;position:absolute;">you'll never know</span>
+          <div>
+            <iframe src="dimden's%20hotel_files/1.html" allowtransparency="true" style="border:none;margin-left: 544px;top: 592px;position:absolute;" width="400" height="300"></iframe>
+          </div>
+          <img src="dimden's%20hotel_files/dimdenomori2.png" alt="corruption" style="position: absolute;top: 384px;margin-left: 90px;" class="corruption">
+          <span style="margin-left: -71px;top: 469px;position:absolute; text-align:center">"dont you find it weird that we dont have anything behind us?"</span>
+          <a style="margin-left: 457px;top: 979px;position:absolute; text-align:center;color: red!important;cursor: pointer;" id="mute">[mute]</a>
+          <a href="https://dimden.dev/basketball" target="_blank"><img src="dimden's%20hotel_files/basketball.png" style="position: absolute;top: 1289px;margin-left: 320px;" alt="basketball" width="32" height="32"></a>
+          <a href="https://dimden.dev/rainsong" target="_blank"><img src="dimden's%20hotel_files/Rain_Song.png" style="position: absolute;top: 1189px;margin-left: 520px;" alt="rainsong" width="32" height="32"></a>
+        </div>
+      </div>
+      <style id="dynamic-style"></style>
+      <script src="dimden's%20hotel_files/script.js"></script><audio src="dimden's%20hotel_files/beep.mp3" style="display: none;"></audio><audio preload="auto" src="dimden's%20hotel_files/imrcv.mp3"></audio><audio id="buzz" src="dimden's%20hotel_files/ElectHum.mp3" loop="" style="display: none;"></audio>
+      <script src="dimden's%20hotel_files/oneko.js"></script><div id="oneko" style="z-index: 5; width: 32px; height: 32px; position: absolute; pointer-events: none; background-image: url(&quot;./images/oneko.gif&quot;); image-rendering: pixelated; left: 672.754px; top: 282.376px; background-position: -64px 0px;"></div>
+      <script src="dimden's%20hotel_files/rain.js"></script>
+
+      <audio preload="auto" src="dimden's%20hotel_files/rainLight1.mp3" loop=""></audio></body></html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html style="height:100%" foxified=""><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NavLink Ads</title>
+</head>
+
+<body id="image" style="margin: 0px; background-size: cover; background-repeat: no-repeat; background-color: white; background-image: url(&quot;http://boxy.neocities.org/images/boxyEmbed.webp&quot;);">
+    <a href="https://boxy.neocities.org/" target="_blank" class="wholepage" id="imglink"></a>
+
+    <script type="text/javascript">
+        //user2663434 did the code below, and melodicake used this and I'm using this thx to her now
+        // Dokodemo stole this code from NEOLINK over on Googol.neocities.org
+        // And now it's dimden.neocities.org managing this...
+
+        let images = [
+            // "https://dokodemo.neocities.org/images/navlink/navlink.gif",
+            // "https://dokodemo.neocities.org/images/navlink/dokodemo.gif",
+            // "https://dokodemo.neocities.org/images/navlink/roly.png",
+            // "https://dokodemo.neocities.org/images/navlink/caby.gif",
+            "https://vaea-v.neocities.org/images/vaea-v_180.gif",
+            "https://nownet.neocities.org/nownetasquarsmall.png",
+            "https://cadnomori.neocities.org/cadno180.gif",
+            "https://i.imgur.com/sm6iS3y.png",
+            "https://i.imgur.com/YuyXMEM.gif",
+            "https://i.imgur.com/fQGh303.gif",
+            "https://the-enigma.neocities.org/pet_T-rex.png",
+            "https://nanoarrow.neocities.org/navlink.png",
+            "https://i.imgur.com/wYoSIXF.png",
+            "https://kangworlds.neocities.org/img/kwad2sm.png",
+            "https://retroworld95.neocities.org/NavLink.png",
+            // "https://usertheproto.neocities.org/Ad.gif",
+            "https://files.catbox.moe/duhjgm.gif",
+            // "https://sugarteara.moe/chips.jpg",
+            "https://temaisgame.neocities.org/assets/images/navlinkad.png",
+            "https://files.catbox.moe/6kyfs9.png",
+            // "https://dokodemo.neocities.org/images/navlink/mick.png",
+            "https://files.catbox.moe/feurns.png",
+            "https://dimden.dev/images/visitdimden.gif",
+            "https://dimden.dev/images/visitdimden.gif",
+            "https://dimden.dev/images/visitdimden.gif",
+            "https://cdn.discordapp.com/attachments/988784361010757663/989914064962617364/20220625_012102.gif",
+            "https://i.imgur.com/KxwcHo6.gif",
+            "https://i.imgur.com/TNqKW6o.gif",
+            "https://files.catbox.moe/6mtpyz.gif",
+            "https://i.ibb.co/9v2vpkR/ezgif-com-gif-maker-4.gif",
+            "https://smoketopus.neocities.org/graphics/cdburnrobothome.png",
+            "https://files.catbox.moe/1ca01c.png",
+            // "https://file.garden/YuB8i-gHkWVkfQ3K/Neosuffhering.gif",
+            "https://cdn.discordapp.com/attachments/603303568317087798/1037293202773901342/anonicusad.png",
+            "https://files.catbox.moe/m5koti.gif",
+            "https://cdn.discordapp.com/attachments/1053268810662150204/1053270775051845632/wVLtvy6zcFlJwAAAABJRU5ErkJggg.png",
+            "http://boxy.neocities.org/images/boxyEmbed.webp",
+            "https://i.imgur.com/jU9jKUy.gif",
+            "https://i.imgur.com/2Dk7wTa.png",
+            "https://files.catbox.moe/0e8jjn.png",
+            "https://files.catbox.moe/4ue913.gif"
+        ];
+        let links = [
+            // "https://dokodemo.neocities.org/",
+            // "https://dokodemo.neocities.org/",
+            // "https://roly.neocities.org/",
+            // "http://caby.somnolescent.net/",
+            "https://vaea-v.neocities.org/",
+            "https://nownet.neocities.org/",
+            "https://cadnomori.neocities.org/",
+            "https://uncannyvalley.neocities.org/",
+            "https://crossparadise.neocities.org/",
+            "https://koinuko.neocities.org/",
+            "https://the-enigma.neocities.org/",
+            "https://nanoarrow.neocities.org/",
+            "https://debs-place.neocities.org/",
+            "https://kangworlds.neocities.org/",
+            "https://retroworld95.neocities.org/",
+            // "https://usertheproto.neocities.org/",
+            "https://ophanimkei.com/",
+            // "https://sugarteara.moe/",
+            "https://temaisgame.neocities.org/",
+            "https://skruffy64.neocities.org/",
+            // "https://mickman.neocities.org/",
+            "https://lime360.neocities.org/",
+            "https://dimden.dev/",
+            "https://dimden.dev/",
+            "https://dimden.dev/",
+            "https://melps.neocities.org/",
+            "https://sleepy-sage.neocities.org/",
+            "https://tricksterhat.neocities.org/",
+            "https://cozy-angels.neocities.org",
+            "https://onlywonder.neocities.org",
+            "https://smoketopus.neocities.org/",
+            "https://theawesometeg219.neocities.org/",
+            // "https://ne0suffhering.neocities.org/",
+            "https://anonicus.neocities.org/index.html",
+            "https://doctordizzy.neocities.org/",
+            "https://cryingfont.neocities.org/",
+            "https://boxy.neocities.org/",
+            "https://bebetcy.neocities.org/",
+            "https://itsyaboypedro.neocities.org/",
+            "https://shiroganes.neocities.org/",
+            "https://www.hiyaaxp.tk/"
+        ];
+
+        function randImg(index) {
+            let size = images.length;
+            let i;
+            if (index) {
+                i = index;
+            } else {
+                i = Math.floor(size * Math.random());
+            }
+            document.getElementById('image').style.backgroundImage = "url('" + images[i] + "')";
+            document.getElementById('imglink').href = links[i];
+            setTimeout(randImg, 30000);
+        }
+
+        randImg();
+    </script>
+    <div class="fixed">
+        <a href="https://dimden.dev/navlinkads" target="_blank" style="color:dimgray; text-decoration:none;white-space: pre;">NavLink Ads</a>
+    </div>
+    <style>
+        div.fixed {
+            position: fixed;
+            bottom: -4px;
+            left: 0;
+            padding: 1px;
+            border: 1px solid;
+            border-color: gray;
+            border-top-right-radius: 4px;
+            background-color: #ffffffc0;
+            font-size: 11px;
+            font-family: "MS Gothic";
+        }
+        a.wholepage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            text-indent: -9999px;
+        }
+    </style>
+
+</body></html>
