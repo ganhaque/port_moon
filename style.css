@@ -206,7 +206,7 @@ a {
   font-family: terminus;
   /* font-size: 0.9em; */
   /* margin: 0 auto; */
-  /* font-weight: 700; */
+  font-weight: 700;
   /* text-align: center; */
   border: 2px solid rgba(var(--base04), 1);
   border-radius: 6px;
@@ -263,6 +263,9 @@ a {
 }
 
 .singular {
+  /* width: 200px; */
+  padding-top: 15px;
+  /* height: 200px; */
   user-select: none;
   text-align: center;
   /* height: 180px; */
@@ -463,7 +466,7 @@ a {
 }
 
 h2 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: inline;
   font-family: terminus;
   color: rgba(var(--yellow), 1);
